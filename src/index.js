@@ -112,14 +112,25 @@ async function handleSearch() {
           : '';
         return `
           <li class="country-item">
-            <img src="${flagSrc}" alt="${countryName} flag" class="country-flag" />
-            <div class="country-details">
-              <h2 class="country-name">${countryName}</h2>
-              <p><span class="country-label">Capital:</span> ${capital}</p>
-              <p><span class="country-label">Population:</span> ${population}</p>
-              <p><span class="country-label">Languages:</span> ${languages}</p>
-            </div>
-          </li>
+  <div class="country-details">
+    <div class="container-image-country">
+      <img
+        src="${flagSrc}"
+        alt="${countryName} flag"
+        class="country-flag"
+        width="40"
+        height="30"
+      />
+      <h2 class="country-name">${countryName}</h2>
+    </div>
+    <div class="container-addition-text">
+        <p><span class="country-label">Capital:</span> ${capital}</p>
+        <p><span class="country-label">Population:</span> ${population}</p>
+        <p><span class="country-label">Languages:</span> ${languages}</p>
+    </div>
+  </div>
+</li>
+
         `;
       })
       .join('');

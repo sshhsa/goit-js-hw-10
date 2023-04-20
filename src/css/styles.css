@@ -31,3 +31,22 @@ body {
   border-radius: 4px;
   border: 2px dashed var(--main-dark-clr);
 }
+
+.container-image-country {
+  display: flex;
+  margin: 0px 0px 20px 20px;
+}
+
+.country-flag {
+  margin-right: 20px;
+}
+
+.country-name {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.container-addition-text {
+  margin: 0px 0px 50px 20px;
+  font-size: 20px;
+}
