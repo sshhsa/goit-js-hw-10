@@ -74,14 +74,3 @@ async function handleSearch() {
     }
   }
 }
-
-async function fetchCountries(name) {
-  const url = `${BASE_URL}/name/${name}?fields=name;capital;population;flags.svg;languages`;
-  const response = await fetch(url);
-
-  if (!response.ok) {
-    throw new Error(response.statusText);
-  }
-
-  return response.json();
-}
