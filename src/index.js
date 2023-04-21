@@ -5,7 +5,6 @@ import Notiflix from 'notiflix';
 
 const searchBox = document.querySelector('#search-box');
 const countryList = document.querySelector('.js-list');
-const BASE_URL = 'https://restcountries.com/v3.1';
 
 searchBox.addEventListener('input', debounce(handleSearch, 300));
 
